@@ -1,1 +1,1 @@
-This script uses the pwd -P command to get the current working directory, and the -P option ensures that the absolute path is returned, even if the current directory is a symbolic link. The $() syntax is used to capture the output of the command and assign it to the cwd variable. Finally, the echo command is used to print the absolute path of the current working directory to the console.
+0x00-shell_basics
