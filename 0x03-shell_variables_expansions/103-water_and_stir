@@ -1,3 +1,2 @@
 #!/bin/bash
-result=$((36#"$WATER" + 36#"$STIR"))
-printf "%s\n" $(bc <<< "obase=bestchol; $result")
+echo $(printf %o $(($((5#$(echo $WATER | tr 'water' '01234'))) + $((5#$(echo $STIR | tr 'stir.' '01234'))))) | tr '01234567' 'bestchol')
